@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+	<head>
+		<link rel="stylesheet" type="text/css" href="options.css"/>
+		<script type="text/javascript" src="js/mootools-1.2.4.js"></script>
+		<script src="js/rijndael.js" type="text/javascript"></script>
+		<script src="js/utils.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/options.js"></script>
+		<title>Pinboard - Options</title>
+	</head>
+	<body>
+		<h1>Pinboard</h1>
+		<h2>Options</h2>
+		
+		<form>
+			<div class="fieldset" id="user">
+				<h3>Your Pinboard Account</h3>
+								
+				<div id="delicious_form">
+					<label>Username</label>
+					<input type="text" name="username" id="username">
+					
+					<label>Password</label>
+					<input type="password" name="password" id="password">
+					
+					<input type="button" name="saveuser" id="saveuser" value="Save">
+					
+					<p id="savemessage">Your account has been saved</p>
+				</div>
+				
+			</div>
+			
+			<div class="fieldset" id="synch">
+				<h3>Bookmarks</h3>
+				<div class="row">
+					<input type="checkbox" name="autosynch" id="autosynch" /> <label for="autosynch">Enable Automatic Updating</label>
+				</div>
+				<div class="row">
+					<a href="#" id="synchnow">Update Bookmarks Now</a>
+					<p id="syncherror">An error occurred while syncing</p>
+				</div>
+				<hr />
+				<h3>Icon</h3>
+				<div class="row">
+					<ul id="popupicon_list">
+						<li>
+							<input type="radio" name="popupicon" id="popupicon_default" value="default" />
+							<label for="popupicon_default"><img src="images/icon_19.png" alt=""/></label>
+						</li>
+						<li>
+							<input type="radio" name="popupicon" id="popupicon_black" value="black" />
+							<label for="popupicon_black"><img src="images/icon_19_black.png" alt=""/></label>
+						</li>
+					</ul>
+				</div>
+				<hr />
+				<h3>Keyboard Shortcuts</h3>
+				<div class="row">
+					<input type="checkbox" name="keyboardshort" id="keyboardshort" /> <label for="keyboardshort">Enable Keyboard Shortcuts</label>
+				</div>
+				<br/>
+				<div class="row">
+					Bookmark Page
+					<input id="shortcutBookmark" type="button" class="shortcut" value="set" />
+				</div>
+				<div class="row">
+					Browse Bookmarks
+					<input id="shortcutPopup" type="button" class="shortcut" value="set" />
+				</div>
+				<div class="row">
+					Read Later
+					<input id="shortcutReadLater" type="button" class="shortcut" value="set" />
+				</div>
+			</div>
+		</form>
+		
+		<div class="notes">			
+			<h3>License</h3>
+			<p>
+				Pinboard is free software: you can redistribute it and/or modify
+				it under the terms of the GNU General Public License as published by
+				the Free Software Foundation, either version 3 of the License, or
+				(at your option) any later version.
+			<p>
+			<p>
+				Pinboard is distributed in the hope that it will be useful,
+				but WITHOUT ANY WARRANTY; without even the implied warranty of
+				MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+				<a href="http://www.gnu.org/licenses/" target="_blank">GNU General Public License</a> for more details.
+			</p>
+			<br/>
+			<h3>Credits</h3>
+			<p>
+				Pinboard is powered by the <a href="http://www.mootools.net" target="_blank">mootools</a> javascript framework.<br/>
+				Bookmark, edit and checkmark icons by <a href="http://www.gentleface.com" target="_blank">gentleface</a>.<br/>
+				Pinboard icons by <a href="http://www.jacobbuck.co.nz" target="_blank">Jacob Buck</a>.
+			</p>
+			<br/>
+			<h3>Changelog</h3>
+			<dl>
+				<dt>0.2.3.8</dt>
+					<dd>Added an option to change the toolbar icon.</dd>
+				<dt>0.2.3.7</dt>
+					<dd>Bug fixes and improvements.</dd>
+				<dt class="small">0.2.3.6</dt>
+					<dd>Minor bug fixes and improvements.</dd>
+				<dt class="small">0.2.3.5</dt>
+					<dd class="small">Pre-fill the bookmark description with selected text. Thanks to <a href="http://twitter.com/bobthecow" target="_blank">@bobthecow</a> for this update.</dd>
+				<dt class="smaller">0.2.3.4</dt>
+					<dd class="smaller">Added an option to enable or disable<br/>Keyboard Shortcuts.</dd>
+				<dt class="smaller">0.2.3.3</dt>
+					<dd class="smaller">Password encryption.</dd>
+				<dt class="smallest">0.2.3.2</dt>
+					<dd class="smallest">Added 'Read Later' Keyboard Shortcut.<br/>Bug fixes and general cleanup.</dd>
+				<dt class="smallest">0.2.3.1</dt>
+					<dd class="smallest">Initial release. Forked off felicious 0.2.3.</dd>
+			</dl>
+			<br/>
+			<p>
+				Google Code repository at <a href="http://code.google.com/p/pinboard-chrome/" target="_blank">http://code.google.com/p/pinboard-chrome/</a>.
+			</p>
+			
+			<br/>
+		</div>
+	</body>
+</html>
